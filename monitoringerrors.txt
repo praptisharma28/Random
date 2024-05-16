@@ -1,0 +1,966 @@
+Total slow tests detected: 57
+
+======================================================================
+ERROR: test_check_alertsetting_inline (openwisp_monitoring.device.tests.test_admin.TestAdmin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_admin.py", line 568, in test_check_alertsetting_inline
+    ping_check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_check_inline_formset (openwisp_monitoring.device.tests.test_admin.TestAdmin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_admin.py", line 499, in test_check_inline_formset
+    form.save(commit=True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_device_admin (openwisp_monitoring.device.tests.test_admin.TestAdmin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_admin.py", line 96, in test_device_admin
+    check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_device_disabled_organization_admin (openwisp_monitoring.device.tests.test_admin.TestAdmin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_admin.py", line 327, in test_device_disabled_organization_admin
+    Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_check_signals (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_deleting_device_deletes_tsdb (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_handle_disabled_organization (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_management_ip_clear_device_offline (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_management_ip_not_clear_device_online (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_ok_critical_critical_critical_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_ok_critical_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_ok_problem_critical_problem_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_ok_problem_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_ok_problem_problem_problem_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_status_changed (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_unknown_critical (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_unknown_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 587, in setUp
+    self.ping_check = Check.objects.create(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_device_checksum_trigger_device_recovery_checks (openwisp_monitoring.device.tests.test_recovery.TestRecoveryTransaction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_recovery.py", line 83, in test_device_checksum_trigger_device_recovery_checks
+    device = self._create_config(organization=self._get_org()).device
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 388, in _create_config
+    kwargs['device'] = self._create_device(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 39, in _create_device
+    d.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/base/device.py", line 241, in save
+    super().save(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 123, in auto_ping_receiver
+    transaction_on_commit(
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/utils.py", line 13, in transaction_on_commit
+    with transaction.atomic():
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/transaction.py", line 307, in __exit__
+    connection.set_autocommit(True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 501, in set_autocommit
+    self.run_and_clear_commit_hooks()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 779, in run_and_clear_commit_hooks
+    func()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 124, in <lambda>
+    lambda: auto_create_ping.delay(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 494, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/tasks.py", line 92, in auto_create_ping
+    check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_metrics_received_trigger_device_recovery_checks (openwisp_monitoring.device.tests.test_recovery.TestRecoveryTransaction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_recovery.py", line 108, in test_metrics_received_trigger_device_recovery_checks
+    device = self._create_config(organization=self._get_org()).device
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 388, in _create_config
+    kwargs['device'] = self._create_device(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 39, in _create_device
+    d.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/base/device.py", line 241, in save
+    super().save(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 123, in auto_ping_receiver
+    transaction_on_commit(
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/utils.py", line 13, in transaction_on_commit
+    with transaction.atomic():
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/transaction.py", line 307, in __exit__
+    connection.set_autocommit(True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 501, in set_autocommit
+    self.run_and_clear_commit_hooks()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 779, in run_and_clear_commit_hooks
+    func()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 124, in <lambda>
+    lambda: auto_create_ping.delay(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 494, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/tasks.py", line 92, in auto_create_ping
+    check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_config_status_changed_receiver (openwisp_monitoring.device.tests.test_transactions.TestTransactions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_transactions.py", line 30, in test_config_status_changed_receiver
+    c = self._create_config(status='applied', organization=self._create_org())
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 388, in _create_config
+    kwargs['device'] = self._create_device(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 39, in _create_device
+    d.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/base/device.py", line 241, in save
+    super().save(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 123, in auto_ping_receiver
+    transaction_on_commit(
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/utils.py", line 13, in transaction_on_commit
+    with transaction.atomic():
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/transaction.py", line 307, in __exit__
+    connection.set_autocommit(True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 501, in set_autocommit
+    self.run_and_clear_commit_hooks()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 779, in run_and_clear_commit_hooks
+    func()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 124, in <lambda>
+    lambda: auto_create_ping.delay(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 494, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/tasks.py", line 92, in auto_create_ping
+    check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_is_working_changed_timed_out (openwisp_monitoring.device.tests.test_transactions.TestTransactions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_transactions.py", line 137, in test_is_working_changed_timed_out
+    dc = self._create_device_connection(credentials=ckey, is_working=None)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 115, in _create_device_connection
+    opts['device'] = self._create_device(organization=org)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 39, in _create_device
+    d.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/base/device.py", line 241, in save
+    super().save(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 123, in auto_ping_receiver
+    transaction_on_commit(
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/utils.py", line 13, in transaction_on_commit
+    with transaction.atomic():
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/transaction.py", line 307, in __exit__
+    connection.set_autocommit(True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 501, in set_autocommit
+    self.run_and_clear_commit_hooks()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 779, in run_and_clear_commit_hooks
+    func()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 124, in <lambda>
+    lambda: auto_create_ping.delay(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 494, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/tasks.py", line 92, in auto_create_ping
+    check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_is_working_changed_to_false (openwisp_monitoring.device.tests.test_transactions.TestTransactions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_transactions.py", line 87, in test_is_working_changed_to_false
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 39, in _create_device
+    d.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/base/device.py", line 241, in save
+    super().save(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 123, in auto_ping_receiver
+    transaction_on_commit(
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/utils.py", line 13, in transaction_on_commit
+    with transaction.atomic():
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/transaction.py", line 307, in __exit__
+    connection.set_autocommit(True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 501, in set_autocommit
+    self.run_and_clear_commit_hooks()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 779, in run_and_clear_commit_hooks
+    func()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 124, in <lambda>
+    lambda: auto_create_ping.delay(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 494, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/tasks.py", line 92, in auto_create_ping
+    check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_is_working_changed_unable_to_connect (openwisp_monitoring.device.tests.test_transactions.TestTransactions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_transactions.py", line 118, in test_is_working_changed_unable_to_connect
+    dc = self._create_device_connection(credentials=ckey)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 115, in _create_device_connection
+    opts['device'] = self._create_device(organization=org)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 39, in _create_device
+    d.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/base/device.py", line 241, in save
+    super().save(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 123, in auto_ping_receiver
+    transaction_on_commit(
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/utils.py", line 13, in transaction_on_commit
+    with transaction.atomic():
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/transaction.py", line 307, in __exit__
+    connection.set_autocommit(True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 501, in set_autocommit
+    self.run_and_clear_commit_hooks()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 779, in run_and_clear_commit_hooks
+    func()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 124, in <lambda>
+    lambda: auto_create_ping.delay(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 494, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/tasks.py", line 92, in auto_create_ping
+    check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_is_working_false_true (openwisp_monitoring.device.tests.test_transactions.TestTransactions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_transactions.py", line 73, in test_is_working_false_true
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 39, in _create_device
+    d.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/base/device.py", line 241, in save
+    super().save(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 123, in auto_ping_receiver
+    transaction_on_commit(
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/utils.py", line 13, in transaction_on_commit
+    with transaction.atomic():
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/transaction.py", line 307, in __exit__
+    connection.set_autocommit(True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 501, in set_autocommit
+    self.run_and_clear_commit_hooks()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 779, in run_and_clear_commit_hooks
+    func()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 124, in <lambda>
+    lambda: auto_create_ping.delay(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 494, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/tasks.py", line 92, in auto_create_ping
+    check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_is_working_no_recovery_notification (openwisp_monitoring.device.tests.test_transactions.TestTransactions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_transactions.py", line 156, in test_is_working_no_recovery_notification
+    dc = self._create_device_connection(credentials=ckey, is_working=True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 115, in _create_device_connection
+    opts['device'] = self._create_device(organization=org)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 39, in _create_device
+    d.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/base/device.py", line 241, in save
+    super().save(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 123, in auto_ping_receiver
+    transaction_on_commit(
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/utils.py", line 13, in transaction_on_commit
+    with transaction.atomic():
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/transaction.py", line 307, in __exit__
+    connection.set_autocommit(True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 501, in set_autocommit
+    self.run_and_clear_commit_hooks()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 779, in run_and_clear_commit_hooks
+    func()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 124, in <lambda>
+    lambda: auto_create_ping.delay(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 494, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/tasks.py", line 92, in auto_create_ping
+    check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_is_working_none_true (openwisp_monitoring.device.tests.test_transactions.TestTransactions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_transactions.py", line 101, in test_is_working_none_true
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 39, in _create_device
+    d.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/base/device.py", line 241, in save
+    super().save(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 123, in auto_ping_receiver
+    transaction_on_commit(
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/utils.py", line 13, in transaction_on_commit
+    with transaction.atomic():
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/transaction.py", line 307, in __exit__
+    connection.set_autocommit(True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 501, in set_autocommit
+    self.run_and_clear_commit_hooks()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 779, in run_and_clear_commit_hooks
+    func()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 124, in <lambda>
+    lambda: auto_create_ping.delay(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 494, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/tasks.py", line 92, in auto_create_ping
+    check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_trigger_device_recovery_task (openwisp_monitoring.device.tests.test_transactions.TestTransactions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_transactions.py", line 41, in test_trigger_device_recovery_task
+    d = self._create_device(organization=self._create_org())
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 39, in _create_device
+    d.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/base/device.py", line 241, in save
+    super().save(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 123, in auto_ping_receiver
+    transaction_on_commit(
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/utils.py", line 13, in transaction_on_commit
+    with transaction.atomic():
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/transaction.py", line 307, in __exit__
+    connection.set_autocommit(True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 501, in set_autocommit
+    self.run_and_clear_commit_hooks()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 779, in run_and_clear_commit_hooks
+    func()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 124, in <lambda>
+    lambda: auto_create_ping.delay(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 494, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/tasks.py", line 92, in auto_create_ping
+    check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+======================================================================
+ERROR: test_trigger_device_recovery_task_regression (openwisp_monitoring.device.tests.test_transactions.TestTransactions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_transactions.py", line 62, in test_trigger_device_recovery_task_regression
+    dm = self._create_device_monitoring()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/__init__.py", line 49, in _create_device_monitoring
+    d = self._create_device(organization=self._create_org())
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 39, in _create_device
+    d.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/base/device.py", line 241, in save
+    super().save(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 123, in auto_ping_receiver
+    transaction_on_commit(
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/utils.py", line 13, in transaction_on_commit
+    with transaction.atomic():
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/transaction.py", line 307, in __exit__
+    connection.set_autocommit(True)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 501, in set_autocommit
+    self.run_and_clear_commit_hooks()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/backends/base/base.py", line 779, in run_and_clear_commit_hooks
+    func()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/base/models.py", line 124, in <lambda>
+    lambda: auto_create_ping.delay(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 591, in apply_async
+    return self.apply(args, kwargs, task_id=task_id or uuid(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/task.py", line 819, in apply
+    ret = tracer(task_id, args, kwargs, request)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 494, in trace_task
+    I, R, state, retval = on_error(task_request, exc)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/celery/app/trace.py", line 477, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/check/tasks.py", line 92, in auto_create_ping
+    check.save()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+TypeError: AbstractDeviceMonitoring.handle_critical_metric() missing 1 required positional argument: 'check'
+
+----------------------------------------------------------------------
+Ran 155 tests in 52.329s
+
+FAILED (errors=28)
