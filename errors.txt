@@ -1,0 +1,313 @@
+Total slow tests detected: 97
+
+======================================================================
+ERROR: test_deleting_device_deletes_tsdb (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 755, in test_deleting_device_deletes_tsdb
+    dm1, ping1, _, _ = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+ERROR: test_handle_disabled_organization (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 778, in test_handle_disabled_organization
+    device_monitoring, _, _, _ = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+ERROR: test_management_ip_clear_device_offline (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 702, in test_management_ip_clear_device_offline
+    dm, ping, load, process_count = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+ERROR: test_management_ip_not_clear_device_online (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 713, in test_management_ip_not_clear_device_online
+    dm, ping, load, process_count = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+ERROR: test_ok_critical_critical_critical_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 678, in test_ok_critical_critical_critical_ok
+    dm, ping, load, process_count = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+ERROR: test_ok_critical_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 650, in test_ok_critical_ok
+    dm, ping, load, process_count = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+ERROR: test_ok_problem_critical_problem_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 666, in test_ok_problem_critical_problem_ok
+    dm, ping, load, process_count = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+ERROR: test_ok_problem_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 658, in test_ok_problem_ok
+    dm, ping, load, process_count = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+ERROR: test_ok_problem_problem_problem_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 690, in test_ok_problem_problem_problem_ok
+    dm, ping, load, process_count = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+ERROR: test_status_changed (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 636, in test_status_changed
+    dm, ping, load, process_count = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+ERROR: test_unknown_critical (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 744, in test_unknown_critical
+    dm, ping, load, process_count = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+ERROR: test_unknown_ok (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 733, in test_unknown_ok
+    dm, ping, load, process_count = self._create_env()
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 557, in _create_env
+    d = self._create_device()
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/connection/tests/utils.py", line 57, in _create_device
+    return super()._create_device(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 243, in _create_device
+    return super()._create_device(**kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_controller/config/tests/utils.py", line 30, in _create_device
+    organization=self._get_org(),
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/openwisp_users/tests/utils.py", line 187, in _get_org
+    return Organization.objects.get(name=org_name)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/prapti/Desktop/openwisp/env/lib/python3.10/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+openwisp_users.models.Organization.MultipleObjectsReturned: get() returned more than one Organization -- it returned 2!
+
+======================================================================
+FAIL: test_check_signals (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring) [Test disabling a critical check]
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 601, in test_check_signals
+    self.assertEqual(handler.call_count, 1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_check_signals (openwisp_monitoring.device.tests.test_models.TestDeviceMonitoring) [Test deleting a critical check]
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/prapti/Desktop/openwisp/openwisp-monitoring/openwisp_monitoring/device/tests/test_models.py", line 633, in test_check_signals
+    self.assertEqual(self.device.monitoring.status, 'unknown')
+AssertionError: 'ok' != 'unknown'
+- ok
++ unknown
+
+
+----------------------------------------------------------------------
+Ran 324 tests in 122.509s
+
+FAILED (failures=2, errors=12)
+Destroying test database for alias 'default'...
+(env) prapti@prapti:~/Desktop/openwisp/openwisp-monitoring$ git checkout -b new-branch
+Switched to a new branch 'new-branch'
+(env) prapti@prapti:~/Desktop/openwisp/openwisp-monitoring$ git add .
+git commit -m "Temporary changes"
+[new-branch 1e6bef1] Temporary changes
+ 3 files changed, 15 insertions(+), 8 deletions(-)
+(env) prapti@prapti:~/Desktop/openwisp/openwisp-monitoring$ git push origin new-branch
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.01 KiB | 518.00 KiB/s, done.
+Total 9 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+remote: 
+remote: Create a pull request for 'new-branch' on GitHub by visiting:
+remote:      https://github.com/praptisharma28/openwisp-monitoring/pull/new/new-branch
+remote: 
+To https://github.com/praptisharma28/openwisp-monitoring.git
+ * [new branch]      new-branch -> new-branch
+(env) prapti@prapti:~/Desktop/openwisp/openwisp-monitoring$ 
