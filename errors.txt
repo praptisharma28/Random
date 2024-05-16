@@ -290,24 +290,4 @@ Ran 324 tests in 122.509s
 
 FAILED (failures=2, errors=12)
 Destroying test database for alias 'default'...
-(env) prapti@prapti:~/Desktop/openwisp/openwisp-monitoring$ git checkout -b new-branch
-Switched to a new branch 'new-branch'
-(env) prapti@prapti:~/Desktop/openwisp/openwisp-monitoring$ git add .
-git commit -m "Temporary changes"
-[new-branch 1e6bef1] Temporary changes
- 3 files changed, 15 insertions(+), 8 deletions(-)
-(env) prapti@prapti:~/Desktop/openwisp/openwisp-monitoring$ git push origin new-branch
-Enumerating objects: 17, done.
-Counting objects: 100% (17/17), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (9/9), done.
-Writing objects: 100% (9/9), 1.01 KiB | 518.00 KiB/s, done.
-Total 9 (delta 7), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
-remote: 
-remote: Create a pull request for 'new-branch' on GitHub by visiting:
-remote:      https://github.com/praptisharma28/openwisp-monitoring/pull/new/new-branch
-remote: 
-To https://github.com/praptisharma28/openwisp-monitoring.git
- * [new branch]      new-branch -> new-branch
 (env) prapti@prapti:~/Desktop/openwisp/openwisp-monitoring$ 
